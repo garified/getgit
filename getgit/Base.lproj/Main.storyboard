@@ -120,6 +120,9 @@
                                     <constraint firstAttribute="height" constant="12" id="IiF-f9-KvP"/>
                                 </constraints>
                                 <state key="normal" title="Choose Your State"/>
+                                <connections>
+                                    <action selector="statePickerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaU-HS-xGk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kog-po-618">
                                 <rect key="frame" x="36" y="496" width="303" height="23"/>
@@ -138,7 +141,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-jm-qR8">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-jm-qR8">
                                 <rect key="frame" x="28" y="498" width="320" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="jIK-lA-BOs"/>
@@ -191,6 +194,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="statePicker" destination="bUO-jm-qR8" id="Cbz-y6-t3n"/>
+                        <outlet property="statePickerBtn" destination="Ezy-8g-uo5" id="ZFK-V8-tte"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
